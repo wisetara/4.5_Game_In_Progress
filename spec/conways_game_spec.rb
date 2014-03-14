@@ -17,6 +17,13 @@ describe 'Space' do
       test_space.y_coord.should eq 2
     end
   end
+
+  describe '#state' do
+    it 'returns true or false based on the status of a space' do
+      test_space = Space.new(1, 2)
+      test_space.should eq (false)
+    end
+  end
 end
 
 describe 'Board' do
